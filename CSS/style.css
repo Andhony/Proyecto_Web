@@ -41,13 +41,12 @@ main{
     height: 250px;
 }
 .fuente p{
-    display: flex;
-    justify-content: center;
     font-family: myfont;
     position: relative;
     font-size: 20pt;
     color: white;
     padding: 30% 0;
+    text-align: center;
 }
 .frase p{
     font-family: myfont;
@@ -118,6 +117,10 @@ ul li:hover, ul li a:hover{
     background-color: lightgrey;
     cursor: pointer;
 }
+.activo{
+    color: gray;
+    font-weight: bold;
+}
 footer p{
     background-color: black;
     color: white;
@@ -143,7 +146,10 @@ h2{
 }
 
 .slider-galeria .elemento{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     left: 0;
     top: 0;
     width: 100%;
@@ -152,16 +158,13 @@ h2{
     width: 100%;
 }
 .slider-galeria .elemento .descripcion{
-    display: block;
     font-family: myfont;
     font-size: 20pt;
     color: orange;
     width: 100%;
     font-weight: bolder;
     text-align: center;
-    position: relative;
-    left: 0%;
-    top: 0px;
+    margin: 20px 0;
 }
 @media only screen and (min-width: 600px){ /* TABLET */
     .col-t-1{width: 8.33%;}
@@ -185,11 +188,9 @@ h2{
     }
     .contenedor h2{
         font-size: 35pt;
-    }
+    }    
 }
-@media only screen and (min-width: 670px){
-    
-}
+
 @media only screen and (min-width: 768px){ /* ESCRITORIO */
     .col-1{width: 8.33%;}
     .col-2{width: 16.66%;}
@@ -233,33 +234,25 @@ h2{
         height: 70vh;
     }
     .fuente p{
+        align-items: center;
         font-size: 25pt;
-        padding: 15% 0;
     }
     .slider-galeria{
         min-height: 210px;
+    }
+    .slider-galeria .elemento{
+        flex-direction: row;
     }
     .slider-galeria .elemento img{
         width: 50%;
     }
     .slider-galeria .elemento .descripcion{
-        font-size: 30pt;
+        font-size: 25pt;
         width: 50%;
         left: 50%;
-        top: -220px;
+        top: -250px;
     }   
     nav ul li a{
         font-size: 12pt;
-    }
-}
-@media only screen and (min-width: 1050px){
-    .slider-galeria{
-        min-height: 300px;
-    }
-}
-
-@media only screen and (min-width: 1150px){
-    .slider-galeria{
-        min-height: 350px;
     }
 }

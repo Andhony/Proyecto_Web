@@ -11,70 +11,94 @@
     <script src = "../JS/main.js"></script>
 </head>
 <body>
-    <div class="principal">
-        <div class="row">
-            <header>
-                    <div class="contenedor-flex">
-                            <img src="../img/logo.png" alt="" class="logo">
-                            <h1>Ruby's Cupcakes</h1>
-                        </div>
-                        <nav class="col-12 col-t-12 pedidos">
-                                <ul class="nav-flex">
-                                        <li><a href="index.html"><span class="fas fa-home"></span> Inicio</a></li>
-                                        <li><a href="postres.html"><span class="fas fa-cheese"></span> Postres</a></li>
-                                        <li><a href="regalos.html"><span class="fas fa-gifts"></span> Regalos</a></li>
-                                        <li><a href="galletas.html"><span class="fas fa-cookie-bite"></span> Galletas</a></li>
-                                        <li><a href="pedidos.html"><span class="fas fa-shopping-cart"></span> Pedidos</a></li>
-                                        <li><a href="pasteles.html"><span class="fas fa-question"></span> Preguntas</a></li>
-                                        <li><a href="cupcakes.html"><span class="fas fa-envelope-open-text"></span> Sugerencias</a></li>
-                                </ul>
-                        </nav>
-            </header>
-        </div>
-    </div>
-    <hr><br>
-        <div class="fondito">
-                <h3>Para uno de los momentos mas dulces y tiernos</h3><br><br>
-                <fieldset>
-                        <legend><b>Datos del cliente</b></legend><br>
-                            <p>
-                                <label for="nombre"><b>Nombre</b></label>
-                                <input placeholder="Ejemplo" id="nombre" required autofocus>
-                                <label for="apellido"><b>Apellido</b></label>
-                                <input placeholder="Ejemplo" id="apellido" required autofocus>
-                            </p>
-                            <br>
-                            <p>
-                                <label for="email"><b>Correo Electronico</b></label>
-                                <input placeholder="ejemplo19@gmail.com" type="email"  id="email" required autofocus>
-                                <label for="telefono"><b>Telefono</b></label>
-                                <input placeholder="0000-0000" type="text" id="telefono" >
-                            </p>
-                            <br>
-                            <p>
-                                <label for="dep"><b>Departamento</b></label>
-                                    <select name="" id="dep">
-                                            <option value="Santa ANA">Santa Ana</option>
-                                            <option value="Sonsonate">Sonsonate</option>
-                                            <option value="Ahuachapan">Ahuachapan</option>
-                                            <option value="San Salvador">San Salvador</option>
-                                            <option value="La Libertad">La Libertad</option>
-                                    </select>
-                            </p>
-                            <br>
-                            <p>
-                                    <label for="fecha"><b>Fecha de entrega</b></label>
-                                    <input type="date" id="fecha">
-                            </p>
-                            <br>
-                    </fieldset>
+        <div class="principal">
+                <div class="row">
+                        <header>
+                                <div class="contenedor-flex">
+                                        <img src="../img/logo.png" alt="" class="logo">
+                                        <h1>Ruby's Cupcakes</h1>
+                                </div>
+                                <hr>
+                                <nav class="col-12 col-t-12 menu">
+                                        <ul class="nav-flex">
+                                                <li><a href="index.html"><span class="fas fa-home"></span> Inicio</a></li>
+                                                <li><a href="postres.html"><span class="fas fa-cheese"></span> Postres</a></li>
+                                                <li><a href="regalos.html"><span class="fas fa-gifts"></span> Regalos</a></li>
+                                                <li><a href="galletas.html"><span class="fas fa-cookie-bite"></span> Galletas</a></li>
+                                                <li><a href="pedidos.html"><span class="fas fa-shopping-cart activo"></span> Pedidos</a></li>
+                                                <li><a href="pasteles.html"><span class="fas fa-question"></span> Preguntas</a></li>
+                                                <li><a href="cupcakes.html"><span class="fas fa-envelope-open-text"></span> Sugerencias</a></li>
+                                        </ul>
+                                </nav>
+                        </header>
                 </div>
-        <footer>
-                <p><span class="fab fa-facebook">  Ruby's Cupcakes</span></p>
-                <p><span class="fab fa-whatsapp">  +503 7654 2230</span></p>
-                <p><span class="fab fa-instagram">  Ruby'ss Cupcakes</span></p>
-                <hr>
-                <p> CopyRights &copy; 2019</p>
-        </footer>
+                <div class="row">
+                        <main class="col-12 col-t-12 contenedor">
+                                <div class="col-6 col-t-6">
+                                        <div class="col-9 caja">
+                                                <hr><br>
+                                                <h4><b>Datos del cliente</b></h4><br>
+                                                <p>
+                                                        <label for="nombre"><b>Nombre</b></label>
+                                                        <input placeholder="Ejemplo" id="nombre" required autofocus><br><br>
+                                                        <label for="apellido"><b>Apellido</b></label>
+                                                        <input placeholder="Ejemplo" id="apellido" required autofocus>
+                                                </p><br>
+                                                <p>
+                                                        <label for="email"><b>Correo Electronico</b></label>
+                                                        <input placeholder="ejemplo19@gmail.com" type="email"  id="email" required autofocus><br><br>
+                                                        <label for="telefono"><b>Telefono</b></label>
+                                                        <input placeholder="0000-0000" type="text" id="telefono" >
+                                                </p><br>
+                                                <p>
+                                                        <label for="dep"><b>Departamento</b></label>
+                                                        <select name="" id="dep">
+                                                                <option value="Santa Ana">Santa Ana</option>
+                                                                <option value="Sonsonate">Sonsonate</option>
+                                                                <option value="Ahuachapan">Ahuachapan</option>
+                                                                <option value="San Salvador">San Salvador</option>
+                                                                <option value="La Libertad">La Libertad</option>
+                                                                <option value="La Paz">La Paz</option>
+                                                                <option value="La Union">La Union</option>
+                                                                <option value="San Vicente">San Vicente</option>
+                                                                <option value="Morazan">Morazan</option>
+                                                                <option value="Usulutan">Usulutan</option>
+                                                                <option value="Chalatenango">Chalatenango</option>
+                                                                <option value="Cabañas">Cabañas</option>
+                                                                <option value="Cuscatlan">Cuscatlan</option>
+                                                                <option value="San Miguel">San Miguel</option>
+                                                        </select>
+                                                </p><br>
+                                                <p>
+                                                        <label for="fecha"><b>Fecha de entrega</b></label>
+                                                        <input type="date" id="fecha">
+                                                        </p><br><hr><br>
+                                                        <p><h4>Datos de tarjeta de credito</h4><br></p>
+                                                        <p>
+                                                                <label for="tarjeta"><b>Numero</b></label>
+                                                                <input placeholder="Ej: 000-000-000-00" type="text" id="tarjeta"><br><br>
+                                                                <label for="tarjetanom"><b>Nombre</b></label>
+                                                                <input placeholder="Usuario Usuario" type="text" id="tarjetanom">
+                                                </p><br><hr><br>
+                                                <p><h4>Datos de la direccion de envio</h4></p><br>
+                                                <p>
+                                                        <label for="direccion"><b>Direccion de envio</b></label>
+                                                        <input placeholder="Colonia,Residecial,Barrio,etc" type="text" id="direccion"><br><br>
+                                                        <label for="notas"><b>Notas de tu pedido</b></label>
+                                                        <input placeholder="Lugares de referencia" type="text" id="notas">
+                                                </p><br><hr><br>
+                                                <div class="boton">
+                                                        <center><button>Realizar pedido</button></center>
+                                                </div><br>
+                        </main>
+                </div>
+                <footer>
+                        <p><span class="fab fa-facebook">  Ruby's Cupcakes</span></p>
+                        <p><span class="fab fa-whatsapp">  +503 7654 2230</span></p>
+                        <p><span class="fab fa-instagram">  Ruby'ss Cupcakes</span></p>
+                        <hr>
+                        <p> CopyRights &copy; 2019</p>
+                </footer>
+        </div>
 </body>
 </html>

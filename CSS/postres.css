@@ -6,9 +6,41 @@
 body{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-.main{
+.fondito{
     height: 100vh;
     background-image: url("../IMG/fondo.jpg");
     background-position: center;
-    background-size: cover;   
+    background-size: cover; 
 }
+.cont{
+    background-color: lightpink;
+}
+.contenedor1{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.principal{
+    background-color: beige;
+}
+.boton{
+    margin-top: 5px;
+    line-height: 30px;
+    padding: 6px;
+    background-color: beige;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 2px solid silver;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+}
+.boton:hover{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    box-shadow: 0 3px 10px rgb(150, 150, 150);
+}
+

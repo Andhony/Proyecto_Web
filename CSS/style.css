@@ -118,6 +118,10 @@ ul li:hover, ul li a:hover{
     background-color: lightgrey;
     cursor: pointer;
 }
+.activo{
+    color: gray;
+    font-weight: bold;
+}
 footer p{
     background-color: black;
     color: white;

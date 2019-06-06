@@ -26,9 +26,12 @@ body{
     padding: 8px;
     float: left;
 }
-.slider-galeria h2{
+.contenedor h2{
     font-family: myfont2;
-    font-size: 35pt;
+    font-size: 25pt;
+}
+main{
+    margin-top: 0px;
 }
 .frase{
     display: flex;
@@ -121,22 +124,45 @@ footer p{
     padding: 10px;
     text-align: center;
 }
-
-article{
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-article img{
-    width: 25%;
-    height: 25%;    
-}
-
 h2{
     text-align: center;
 }
 
+.contenedor{
+    width: 100%;
+    position: relative;
+}
+.slider-galeria{
+    border-radius: 10px;
+    border: 2px solid #EA2E83;
+    width: 85%;
+    margin: 0 auto;
+    min-height: 390px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-galeria .elemento{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.slider-galeria .elemento img{
+    width: 100%;
+}
+.slider-galeria .elemento .descripcion{
+    display: block;
+    font-family: myfont;
+    font-size: 20pt;
+    color: orange;
+    width: 100%;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    left: 0%;
+    top: 0px;
+}
 @media only screen and (min-width: 600px){ /* TABLET */
     .col-t-1{width: 8.33%;}
     .col-t-2{width: 16.66%;}
@@ -157,6 +183,12 @@ h2{
         font-size: 25pt;
         padding: 20% 0;
     }
+    .contenedor h2{
+        font-size: 35pt;
+    }
+}
+@media only screen and (min-width: 670px){
+    
 }
 @media only screen and (min-width: 768px){ /* ESCRITORIO */
     .col-1{width: 8.33%;}
@@ -165,7 +197,7 @@ h2{
     .col-4{width: 33.33%;}
     .col-5{width: 41.66%;}
     .col-6{width: 50%;}
-    .col-7{width: 58.33%;}
+    .co l-7{width: 58.33%;}
     .col-8{width: 66.66%;}
     .col-9{width: 75%;}
     .col-10{width: 83.33%;}
@@ -186,6 +218,9 @@ h2{
         z-index: 1000;
         top: 0;
     }
+    .menu-fixed-margin{
+        margin-top: 70px;
+    }
     nav ul li{
         padding: 15px;
     }
@@ -201,5 +236,30 @@ h2{
         font-size: 25pt;
         padding: 15% 0;
     }
-    
+    .slider-galeria{
+        min-height: 210px;
+    }
+    .slider-galeria .elemento img{
+        width: 50%;
+    }
+    .slider-galeria .elemento .descripcion{
+        font-size: 30pt;
+        width: 50%;
+        left: 50%;
+        top: -220px;
+    }   
+    nav ul li a{
+        font-size: 12pt;
+    }
+}
+@media only screen and (min-width: 1050px){
+    .slider-galeria{
+        min-height: 300px;
+    }
+}
+
+@media only screen and (min-width: 1150px){
+    .slider-galeria{
+        min-height: 350px;
+    }
 }

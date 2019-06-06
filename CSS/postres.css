@@ -14,6 +14,11 @@ body{
 }
 .cont{
     background-color: lightpink;
+    display: inline;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 .contenedor1{
     width: 100%;
@@ -43,4 +48,20 @@ body{
     color: black;
     box-shadow: 0 3px 10px rgb(150, 150, 150);
 }
+section{
+    margin-bottom: 10px;
+}
+article{
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 10px;
+    background-color: rgb(230,230,230);
+}
 
+article img{
+    width: 100%;
+    height: auto;
+}
+article h3{
+    margin: 5px;
+    text-align: center;
+}

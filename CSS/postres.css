@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.main{
+    height: 100vh;
+    background-image: url("../IMG/fondo.jpg");
+    background-position: center;
+    background-size: cover;   
+}

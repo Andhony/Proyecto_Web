@@ -15,21 +15,6 @@ h4{
     font-size: 20pt;
     color: black;
 }
-button{
-    padding: 10px;
-    font-weight: 600;
-    font-size: 20px;
-    background-color:black;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    border:0;
-    align-items: center;
-}
-button:hover{
-    background-color: palevioletred;
-    color: black;
-}
 .caja{
     display: flex;
     flex-wrap: nowrap;
@@ -38,9 +23,24 @@ button:hover{
     padding: 10px;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: white;
 }
 input{
     width: 250px;
+    height: 25px;
+}
+.pedido{
+    background-color: black;
+    color: white;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.pedido-padre{
+    display: flex;
+    justify-content: center;
 }
 #fecha{
     width: 185px;
@@ -48,4 +48,7 @@ input{
 select{
     width: 210px;
     text-align: center;
+}
+main{
+    background-color: pink;
 }

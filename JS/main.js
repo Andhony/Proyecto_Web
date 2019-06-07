@@ -17,4 +17,3 @@ $(document).ready(function(){
             $(".slider-galeria article:first-child").fadeOut(0).next('article').fadeIn(1000)
             .end().appendTo(".slider-galeria");},5000);
     });
-});

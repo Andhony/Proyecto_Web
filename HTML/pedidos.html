@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src = "http://code.jquery.com/jquery-latest.js"></script>
     <script src = "../JS/main.js"></script>
+    <script src="../JS/pedidos.js"></script>
 </head>
 <body>
 <div class="principal">
@@ -38,22 +39,23 @@
             <div class="col-6 col-t-6 caja">
                 <div class="col-12 contenido">
                     <br>
+                    <form action="" method="post">
                     <h4><b>Datos del cliente</b></h4><br>
                     <p>
                         <label for="nombre"><b>Nombre:</b></label>
-                        <input placeholder="Ejemplo" id="nombre" required autofocus><br><br>
+                        <input placeholder="Ejemplo" id="nombre" required><br><br>
                         <label for="apellido"><b>Apellido:</b></label>
-                        <input placeholder="Ejemplo" id="apellido" required autofocus>
+                        <input placeholder="Ejemplo" id="apellido" required>
                     </p><br>
                     <p>
                         <label for="email"><b>Correo: &nbsp;</b></label>
-                        <input placeholder="ejemplo19@gmail.com" type="email"  id="email" required autofocus><br><br>
+                        <input placeholder="ejemplo19@gmail.com" type="email"  id="email" required><br><br>
                         <label for="telefono"><b>Telefono:</b></label>
-                        <input placeholder="0000-0000" type="text" id="telefono" >
+                        <input placeholder="0000-0000" type="text" id="telefono" required>
                     </p><br>
                     <p>
                         <label for="dep"><b>Departamento:</b></label>
-                        <select name="" id="dep">
+                        <select name="" id="dep" required>
                             <option value="Santa Ana">Santa Ana</option>
                             <option value="Sonsonate">Sonsonate</option>
                             <option value="Ahuachapan">Ahuachapan</option>
@@ -72,25 +74,26 @@
                    </p><br>
                    <p>
                         <label for="fecha"><b>Fecha de entrega:</b></label>
-                        <input type="date" id="fecha">
+                        <input type="date" id="fecha" required>
                    </p><br><hr><br>
                    <p><h4>Datos de tarjeta de credito</h4><br></p>
                    <p>
                         <label for="tarjeta"><b>Numero:</b></label>
-                        <input placeholder="Ej: 000-000-000-00" type="text" id="tarjeta"><br><br>
+                        <input placeholder="Ej: 000-000-000-00" type="text" id="tarjeta" required><br><br>
                         <label for="tarjetanom"><b>Nombre:</b></label>
-                        <input placeholder="Usuario Usuario" type="text" id="tarjetanom">
+                        <input placeholder="Usuario Usuario" type="text" id="tarjetanom" required>
                     </p><br><hr><br>
                     <p><h4>Datos de la direccion de envio</h4></p><br>
                     <p>
                         <label for="direccion"><b>Direccion de envio:</b></label>
-                        <input placeholder="Colonia,Residecial,Barrio,etc" type="text" id="direccion"><br><br>
+                        <input placeholder="Colonia,Residecial,Barrio,etc" type="text" id="direccion" required><br><br>
                         <label for="notas"><b>Notas de tu pedido:</b></label>
-                        <input placeholder="Lugares de referencia" type="text" id="notas">
+                        <input placeholder="Lugares de referencia" type="text" id="notas" required>
                     </p><br><hr><br>
-                <div class="boton">
-                    <center><button>Realizar pedido</button></center>
-                </div><br>
+                    <div class="pedido-padre">
+                            <input class="pedido" type="submit" value="Realizar Pedido">
+                    </div>
+                </form>
             </div>
         </main>
     </div>
@@ -102,5 +105,7 @@
         <p> CopyRights &copy; 2019</p>
     </footer>
 </div>
+<script>
+</script>
 </body>
 </html>

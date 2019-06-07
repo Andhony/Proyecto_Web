@@ -1,29 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-.fondito{
-    height: 100vh;
-    background-image: url("../IMG/fondo.jpg");
-    background-position: center;
-    background-size: cover; 
-}
 .cont{
-    background-color: lightpink;
-    display: inline;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-.contenedor1{
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
+    background-color: rgb(238, 204, 209);
 }
 .principal{
     background-color: beige;
@@ -32,11 +8,11 @@ body{
     margin-top: 5px;
     line-height: 30px;
     padding: 6px;
-    background-color: beige;
+    background-color: lightblue;
     color: black;
     border-radius: 10px;
     text-decoration: none;
-    border: 2px solid silver;
+    border: 2px solid rgb(48, 25, 25);
     display: block;
     width: 200px;
     text-align: center;
@@ -48,19 +24,26 @@ body{
     color: black;
     box-shadow: 0 3px 10px rgb(150, 150, 150);
 }
-section{
-    margin-bottom: 10px;
-}
-article{
+section article{
     border: 1px solid rgb(150, 150, 150);
     border-radius: 10px;
     background-color: rgb(230,230,230);
 }
-article img{
+section article img{
     width: 100%;
-    height: auto;
+    height: 300px;
 }
 article h3{
     margin: 5px;
     text-align: center;
+}
+@media only screen and (min-width: 600px){ /* TABLET */
+    .boton{
+        background-color: yellow;}
+    
+}
+
+@media only screen and (min-width: 768px){ /* ESCRITORIO */
+    .boton{
+        background-color: red;}
 }

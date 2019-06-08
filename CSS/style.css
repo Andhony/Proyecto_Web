@@ -204,9 +204,7 @@ h2{
     .col-10{width: 83.33%;}
     .col-11{width: 91.66%;}
     .col-12{width: 100%;} 
-    .contenedor1{
-        width: 90%;
-    }
+    
     .nav-flex{
         flex-direction: row;
     }

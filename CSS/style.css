@@ -26,9 +26,10 @@ body{
     padding: 8px;
     float: left;
 }
-.contenedor h2{
+h2{
     font-family: myfont2;
     font-size: 25pt;
+    text-align: center;
 }
 main{
     margin-top: 0px;
@@ -130,10 +131,6 @@ footer p{
     padding: 10px;
     text-align: center;
 }
-h2{
-    text-align: center;
-}
-
 .contenedor{
     width: 100%;
     position: relative;

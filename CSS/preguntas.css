@@ -3,9 +3,12 @@
 }
 .preguntas1{
     background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 .preguntas{
-    background-image: url('../IMG/pantalla2.jpg');
+    background-image: url('../IMG/parapreg.jpg');
 }
 b{
     font-size: 20px;
@@ -135,5 +138,7 @@ img{
     }
     .preguntas{
         background-image: url('../IMG/pantalla2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }

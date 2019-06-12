@@ -1,33 +1,30 @@
-function mostrar(){
-    document.getElementById("paraocultar").style.display = "block";
+function mostrar(id,texto){
+    let idmostrar = id + 1;
+    document.getElementById(texto).style.display = "block";
+    document.getElementById(id).style.display = "none";
+    document.getElementById(idmostrar).style.display = "block";
 }
-function ocultar(){
-    document.getElementById("paraocultar").style.display = "none";
-}
-
-function mostrarg(){
-    document.getElementById("ocultargalletas").style.display = "block";
-}
-function ocultarg(){
-    document.getElementById("ocultargalletas").style.display = "none";
-}
-function mostrarc(){
-    document.getElementById("ocultarcupcakes").style.display = "block";
-}
-function ocultarc(){
-    document.getElementById("ocultarcupcakes").style.display = "none";
+function ocultar(id,texto){
+    let idmostrar = id - 1;
+    document.getElementById(texto).style.display = "none";
+    document.getElementById(id).style.display = "none";
+    document.getElementById(idmostrar).style.display = "block";
 }
 
 var numCompras = 0;
 function addCarretilla(){
     numCompras += 1;
-    let textoNum = document.getElementById('Carret');
+    let textoNum = document.getElementById('CarretT');
+    let textoNum2 = document.getElementById('CarretC');
     textoNum.innerHTML = numCompras;
+    textoNum2.innerHTML = numCompras;
 }
 function rmvCarretilla(){
     numCompras -= 1;
-    let textoNum = document.getElementById('Carret');
+    let textoNum = document.getElementById('CarretT');
+    let textoNum2 = document.getElementById('CarretC');
     textoNum.innerHTML = numCompras;
+    textoNum2.innerHTML = numCompras;
 }
 
 function hideBoton(id){

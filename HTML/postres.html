@@ -36,18 +36,21 @@
          </div>
          <div class="row">
              <main class="cont col-12 col-t-12">
-                <div class="btn col-10 col-t-12">
-                    <button class="botonocultar" value="mostrar" onclick="mostrar()">Mostrar Pasteles</button><br>
-                    <button class="botonocultar" value="ocultar" onclick="ocultar()">Ocultar</button>                   
+                    <div class="col-12 divcarretilla" id="carretCel">
+                        <p id="CarretC">0</p><i class="fas fa-shopping-cart"><a href="../HTML/pedidos.html"> Carretilla</a></i>
+                    </div>
+                <div class="btn col-11 col-t-12">
+                    <button class="botonmostrar col-12" id="100" value="mostrar" onclick="mostrar(100,'pastelOcultar')">Mostrar Pasteles</button><br>
+                    <button class="botonocultar col-12" id="101" value="ocultar" onclick="ocultar(101,'pastelOcultar')">Ocultar Pasteles</button>                   
                 </div>
-                <div class="col-10 col-t-12 box-postres" id="paraocultar">
+                <div class="col-11 col-t-12 box-postres" id="pastelOcultar">
                     <section class="col-12 col-t-12">
                         <hr><br> 
                         <div class="col-10">
                             <h2>PASTELES PERSONALIZADOS</h2> 
                         </div>
-                        <div class="col-2 divcarretilla">
-                            <p id="Carret">0</p> <i class="fas fa-shopping-cart">Carretilla</i>
+                        <div class="col-2 divcarretilla" id="carretTab">
+                            <p id="CarretT">0</p> <i class="fas fa-shopping-cart"><a href="../HTML/pedidos.html"> Carretilla</a></i>
                         </div>
                     </section>
                     <section class="col-12 col-t-12 sect"> 
@@ -86,12 +89,11 @@
                         </article>
                     </section> 
                 </div>
-                <hr>
-                <div class="btn col-10 col-t-12">
-                    <button class="botonocultar" value="mostrar" onclick="mostrarg()">Mostrar Galletas</button><br>
-                    <button class="botonocultar" value="ocultar" onclick="ocultarg()">Ocultar</button>                   
+                <div class="btn col-11 col-t-12">
+                    <button class="botonmostrar col-12" id="102" value="mostrar" onclick="mostrar(102,'ocultarGalletas')">Mostrar Galletas</button><br>
+                    <button class="botonocultar col-12" id="103" value="ocultar" onclick="ocultar(103,'ocultarGalletas')">Ocultar Galletas</button>                   
                 </div>
-                <div class="col-10 col-t-12 box-postres" id="ocultargalletas">
+                <div class="col-11 col-t-12 box-postres" id="ocultarGalletas">
                     <hr><br> 
                     <h2>GALLETAS</h2> 
                     <section class="col-12 col-t-12 sect"> 
@@ -130,12 +132,11 @@
                         </article> 
                     </section>
                 </div> 
-                <hr>
-                <div class="btn col-10 col-t-12">
-                    <button class="botonocultar" value="mostrar" onclick="mostrarc()">Mostrar Cupcakes</button><br>
-                    <button class="botonocultar" value="ocultar" onclick="ocultarc()">Ocultar</button>                   
+                <div class="btn col-11 col-t-12">
+                    <button class="botonmostrar col-12" id="104" value="mostrar" onclick="mostrar(104,'ocultarCupcakes')">Mostrar Cupcakes</button><br>
+                    <button class="botonocultar col-12" id="105" value="ocultar" onclick="ocultar(105,'ocultarCupcakes')">Ocultar Cupcakes</button>                   
                 </div>
-                <div class="col-10 col-t-12 box-postres" id="ocultarcupcakes">
+                <div class="col-11 col-t-12 box-postres" id="ocultarCupcakes">
                     <hr><br> 
                     <h2>CUPCAKES</h2> 
                     <section class="col-12 col-t-12 sect"> 

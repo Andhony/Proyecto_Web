@@ -50,7 +50,6 @@
     color: black;
     border-radius: 10px;
     text-decoration: none;
-    font-family:;
     border: 2px solid rgb(48, 25, 25);
     display: block;
     width: 70%;
@@ -58,6 +57,27 @@
     margin: auto;
 }
 .boton:hover{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgb(150, 150, 150);
+}
+.rmvboton{
+    display: none;
+    margin-top: 5px;
+    line-height: 25px;
+    padding: 6px;
+    background-color: deeppink;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 2px solid rgb(48, 25, 25);
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+.rmvboton:hover{
     border: 2px solid black;
     background-color: white;
     color: black;
@@ -77,9 +97,36 @@
     margin: 5px;
     text-align: center;
 }
+.divcarretilla{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+.divcarretilla i{
+    font-style: oblique;
+    font-size: 15pt;
+    cursor: pointer;
+}
+.divcarretilla i:hover{
+    
+}
+.divcarretilla p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    width: 15%;
+    height: 35%;
+    border-radius: 10px;
+}
 @media only screen and (min-width: 600px){ /* TABLET */
     .btn{
         flex-direction: row;
+    }
+    .divcarretilla{
+        justify-content: flex-start;
     }
 }
 

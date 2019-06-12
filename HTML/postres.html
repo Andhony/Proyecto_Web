@@ -42,35 +42,48 @@
                     <button class="botonocultar" value="ocultar" onclick="ocultar()">Ocultar</button>                   
                 </div>
                 <div class="col-10 col-t-12 box-postres" id="paraocultar">
-                    <hr><br> 
-                    <h2>PASTELES PERSONALIZADOS</h2> 
+                    <section class="col-12 col-t-12">
+                        <hr><br> 
+                        <div class="col-10">
+                            <h2>PASTELES PERSONALIZADOS</h2> 
+                        </div>
+                        <div class="col-2 divcarretilla">
+                            <p id="Carret">0</p> <i class="fas fa-shopping-cart">Carretilla</i>
+                        </div>
+                    </section>
                     <section class="col-12 col-t-12 sect"> 
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/pastelregalo.jpg" alt="mi imagen">
-                            <button class="boton">Agregar a la orden</button>
+                            <button class="boton" id="1" onclick="addCarretilla(), hideBoton(1)">Agregar a la orden</button>
+                            <button class="rmvboton" id="2" onclick="rmvCarretilla(), mostrarBoton(2)">Remover</button>
                         </article>   
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/baby.jpg" alt="mi imagen">
-                            <button class="boton">Agregar a la orden</button>
+                            <button class="boton" id="3" onclick="addCarretilla(), hideBoton(3)">Agregar a la orden</button>
+                            <button class="rmvboton" id="4" onclick="rmvCarretilla(), mostrarBoton(4)">Remover</button>
                         </article> 
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/ingeniero.jpg" alt="mi imagen">
-                            <button class="boton">Agregar a la orden</button>
+                            <button class="boton" id="5" onclick="addCarretilla(), hideBoton(5)">Agregar a la orden</button>
+                            <button class="rmvboton" id="6" onclick="rmvCarretilla(), mostrarBoton(6)">Remover</button>
                         </article>  
                     </section>
                     <br>
                     <section class="col-12 col-t-12 sect"> 
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/harry.jpg" alt="mi imagen">
-                            <button class="boton">Agregar a la orden</button>
+                            <button class="boton" id="7" onclick="addCarretilla(), hideBoton(7)">Agregar a la orden</button>
+                            <button class="rmvboton" id="8" onclick="rmvCarretilla(), mostrarBoton(8)">Remover</button>
                         </article>   
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/graduacion.jpg" alt="mi imagen">
-                            <button class="boton">Agregar a la orden</button>
+                            <button class="boton" id="9" onclick="addCarretilla(), hideBoton(9)">Agregar a la orden</button>
+                            <button class="rmvboton" id="10" onclick="rmvCarretilla(), mostrarBoton(10)">Remover</button>
                         </article> 
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/maquillaje.jpg" alt="mi imagen">
-                            <button class="boton">Agregar a la orden</button>
+                            <button class="boton" id="11" onclick="addCarretilla(), hideBoton(11)">Agregar a la orden</button>
+                            <button class="rmvboton" id="12" onclick="rmvCarretilla(), mostrarBoton(12)">Remover</button>
                         </article>
                     </section> 
                 </div>
@@ -85,30 +98,36 @@
                     <section class="col-12 col-t-12 sect"> 
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/animales.png" alt="mi imagen">
-                            <button class="boton">Agregar a la orden</button>
+                            <button class="boton" id="13" onclick="addCarretilla(), hideBoton(13)">Agregar a la orden</button>
+                            <button class="rmvboton" id="14" onclick="rmvCarretilla(), mostrarBoton(14)">Remover</button>
                         </article>   
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/cactus.png" alt="mi imagen">
-                            <button class="boton">Agregar a la orden</button>
+                            <button class="boton" id="15" onclick="addCarretilla(), hideBoton(15)">Agregar a la orden</button>
+                            <button class="rmvboton" id="16" onclick="rmvCarretilla(), mostrarBoton(16)">Remover</button>
                         </article> 
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/azules.png" alt="mi imagen">
-                            <button class="boton">Agregar a la orden</button>
+                            <button class="boton" id="17" onclick="addCarretilla(), hideBoton(17)">Agregar a la orden</button>
+                            <button class="rmvboton" id="18" onclick="rmvCarretilla(), mostrarBoton(18)">Remover</button>
                         </article>
                     </section>
                     <br>
                     <section class="col-12 col-t-12 sect"> 
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/hojas.png" alt="mi imagen">
-                            <button class="boton">Agregar a la orden</button>
+                            <button class="boton" id="19" onclick="addCarretilla(), hideBoton(19)">Agregar a la orden</button>
+                            <button class="rmvboton" id="20" onclick="rmvCarretilla(), mostrarBoton(20)">Remover</button>
                         </article>   
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/elefante.png" alt="mi imagen">
-                            <button class="boton">Agregar a la orden</button>
+                            <button class="boton" id="21" onclick="addCarretilla(), hideBoton(21)">Agregar a la orden</button>
+                            <button class="rmvboton" id="22" onclick="rmvCarretilla(), mostrarBoton(22)">Remover</button>
                         </article> 
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/sandia.png" alt="mi imagen">
-                            <button class="boton">Agregar a la orden</button>
+                            <button class="boton" id="23" onclick="addCarretilla(), hideBoton(23)">Agregar a la orden</button>
+                            <button class="rmvboton" id="24" onclick="rmvCarretilla(), mostrarBoton(24)">Remover</button>
                         </article> 
                     </section>
                 </div> 
@@ -123,30 +142,36 @@
                     <section class="col-12 col-t-12 sect"> 
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/unic.jpg" alt="mi imagen">
-                            <button class="boton">Agregar a la orden</button>
+                            <button class="boton" id="25" onclick="addCarretilla(), hideBoton(25)">Agregar a la orden</button>
+                            <button class="rmvboton" id="26" onclick="rmvCarretilla(), mostrarBoton(26)">Remover</button>
                         </article>   
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/coco.jpg" alt="mi imagen">
-                            <button class="boton">Agregar a la orden</button>
+                            <button class="boton" id="27" onclick="addCarretilla(), hideBoton(27)">Agregar a la orden</button>
+                            <button class="rmvboton" id="28" onclick="rmvCarretilla(), mostrarBoton(28)">Remover</button>
                         </article> 
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/fresita.jpg" alt="mi imagen">
-                            <button class="boton">Agregar a la orden</button>
+                            <button class="boton" id="29" onclick="addCarretilla(), hideBoton(29)">Agregar a la orden</button>
+                            <button class="rmvboton" id="30" onclick="rmvCarretilla(), mostrarBoton(30)">Remover</button>
                         </article>
                     </section>
                     <br>
                     <section class="col-12 col-t-12 sect"> 
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/unicornio.jpg" alt="mi imagen">
-                            <button class="boton">Agregar a la orden</button>
+                            <button class="boton" id="31" onclick="addCarretilla(), hideBoton(31)">Agregar a la orden</button>
+                            <button class="rmvboton" id="32" onclick="rmvCarretilla(), mostrarBoton(32)">Remover</button>
                         </article>   
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/snupi.jpg" alt="mi imagen">
-                            <button class="boton">Agregar a la orden</button>
+                            <button class="boton" id="33" onclick="addCarretilla(), hideBoton(33)">Agregar a la orden</button>
+                            <button class="rmvboton" id="34" onclick="rmvCarretilla(), mostrarBoton(34)">Remover</button>
                         </article> 
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/rositas.jpg" alt="mi imagen">
-                            <button class="boton">Agregar a la orden</button>
+                            <button class="boton" id="35" onclick="addCarretilla(), hideBoton(35)">Agregar a la orden</button>
+                            <button class="rmvboton" id="36" onclick="rmvCarretilla(), mostrarBoton(36)">Remover</button>
                         </article> 
                     </section>
                 </div> 

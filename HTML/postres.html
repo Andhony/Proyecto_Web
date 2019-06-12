@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src = "http://code.jquery.com/jquery-latest.js"></script>
     <script src = "../JS/main.js"></script>
+    <script src ="../JS/postres.js"></script>
 </head>
 <body>
     <div class="principal">
@@ -28,17 +29,21 @@
                         <li><a href="regalos.html"><span class="fas fa-gifts"></span> Regalos</a></li>
                         <li><a href="recetas.html"><span class="fas fa-cookie-bite"></span> Recetas</a></li>
                         <li><a href="pedidos.html"><span class="fas fa-shopping-cart"></span> Pedidos</a></li>
-                        <li><a href="pasteles.html"><span class="fas fa-question"></span> Preguntas</a></li>
-                        <li><a href="cupcakes.html"><span class="fas fa-envelope-open-text"></span> Sugerencias</a></li>
+                        <li><a href="preguntas.html"><span class="fas fa-question"></span> Preguntas</a></li>
+                        <li><a href="sugerencias.html"><span class="fas fa-envelope-open-text"></span> Sugerencias</a></li>
                     </ul>
                 </nav>
             </header>
          </div>
          <div class="row">
              <main class="cont col-12 col-t-12">
-                <div class="col-10 col-t-10 box-postres">
+                <div class="btn col-10 col-t-12">
+                    <button class="botonocultar" value="mostrar" onclick="mostrar()">Mostrar Pasteles</button><br>
+                    <button class="botonocultar" value="ocultar" onclick="ocultar()">Ocultar</button>                   
+                </div>
+                <div class="col-10 col-t-12 box-postres" id="paraocultar">
                     <hr><br> 
-                    <h2>¡Ordena tu pastel favorito!</h2> 
+                    <h2>PASTELES PERSONALIZADOS</h2> 
                     <section class="col-12 col-t-12 sect"> 
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/pastelregalo.jpg" alt="mi imagen">
@@ -69,9 +74,14 @@
                         </article>
                     </section> 
                 </div>
-                <div class="col-10 col-t-10 box-postres">
+                <hr>
+                <div class="btn col-10 col-t-12">
+                    <button class="botonocultar" value="mostrar" onclick="mostrarg()">Mostrar Galletas</button><br>
+                    <button class="botonocultar" value="ocultar" onclick="ocultarg()">Ocultar</button>                   
+                </div>
+                <div class="col-10 col-t-12 box-postres" id="ocultargalletas">
                     <hr><br> 
-                    <h2>¡Ordena tus galletas favoritas!</h2> 
+                    <h2>GALLETAS</h2> 
                     <section class="col-12 col-t-12 sect"> 
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/animales.png" alt="mi imagen">
@@ -102,9 +112,14 @@
                         </article> 
                     </section>
                 </div> 
-                <div class="col-10 col-t-10 box-postres">
+                <hr>
+                <div class="btn col-10 col-t-12">
+                    <button class="botonocultar" value="mostrar" onclick="mostrarc()">Mostrar Cupcakes</button><br>
+                    <button class="botonocultar" value="ocultar" onclick="ocultarc()">Ocultar</button>                   
+                </div>
+                <div class="col-10 col-t-12 box-postres" id="ocultarcupcakes">
                     <hr><br> 
-                    <h2>¡Ordena tus cupcakes favoritos!</h2> 
+                    <h2>CUPCAKES</h2> 
                     <section class="col-12 col-t-12 sect"> 
                         <article class="col-3 col-t-6 art">
                             <img src="../IMG/unic.jpg" alt="mi imagen">
@@ -134,7 +149,7 @@
                             <button class="boton">Agregar a la orden</button>
                         </article> 
                     </section>
-                    </div> 
+                </div> 
             </main>
         </div>
         <footer>

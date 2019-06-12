@@ -2,10 +2,26 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color:bisque;
+    background-image: url(../IMG/fondo.jpg)
 }
 .cont-interno{
-    background-color: plum;
+    background-color: lavenderblush;
+}
+.contform{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: lavenderblush;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.caja{
+    width: 80%;
+}
+.cajita{
+    display: flex;
+    justify-content: center;
 }
 h2{
     font-family: myfont;
@@ -13,10 +29,45 @@ h2{
     text-align: left;
 }
 section h3{
-    font-size: 18px;
+    font-size: 15px;
     align-content: flex-start;
+}
+.cont-section{
+    flex-wrap: nowrap;
 }
 .icono{
     font-size:35px;
-    color: gray;
+    color: deeppink;
 }
+.fondoform{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: lavenderblush;
+    border-radius: 10px;
+}
+.botontexto{
+        display: inline;
+        justify-content: right;
+        background-color: deeppink;
+        color:white;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 25%;
+}
+input{
+    width: 65%;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.divsect{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.sectionx{
+    width: 50%
+}
+

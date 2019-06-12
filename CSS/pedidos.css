@@ -1,9 +1,4 @@
-.fondito{
-    background-image: url('../IMG/fondito2.jpg');
-    background-position: center;
-    width: 100%;
-    height: 15vh;
-}
+
 h3{
     font-family: myfont;
     font-size: 30pt;
@@ -19,23 +14,33 @@ h4{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
+    text-align: left;
     padding: 10px;
     border: 1px solid black;
+    color:black;
     border-radius: 5px;
-    background-color: white;
+    background-image: url('../IMG/fondofor.jpg');
+    background-size: cover;
 }
 input{
     width: 250px;
     height: 25px;
-    background-color:lightpink;
+    background-color:lightgrey;
     border-radius: 5px;
     border: 1px solid black;
 
 }
+option{
+    background-color:lightgrey;
+    border-radius: 5px;
+    border: 1px solid black;
+}
 .pedido{
     background-color: black;
-    color: white;
+    color:white;
+    font-weight:bolder;
+    font-size: 20px;
     width: 250px;
     height: 35px;
     border-radius: 5px;

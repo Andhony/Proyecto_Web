@@ -34,65 +34,68 @@
         </header>
     </div>
     <div class="row">
-        <main class="col-12 col-t-12 contenedor">
-            <div class="col-6 col-t-6 caja">
-                <div class="col-12 col-t-12 contenido">
-                    <br>
-                    <form action="" method="post">
-                    <h4><b>Datos del cliente</b></h4><br>
-                    <p>
-                        <label for="nombre"><b><span class="fas fa-file-signature"></span> Nombre:</b></label>
-                        <input placeholder="Ejemplo" id="nombre" required><br><br>
-                        <label for="apellido"><b><span class="fas fa-signature"></span> Apellido:</b></label>
-                        <input placeholder="Ejemplo" id="apellido" required>
-                    </p><br>
-                    <p>
-                        <label for="email"><b><span class="fas fa-envelope"></span> Correo:  &nbsp;</b></label>
-                        <input placeholder="ejemplo19@gmail.com" type="email"  id="email" required><br><br>
-                        <label for="telefono"><b><span class="fas fa-phone"></span> Telefono:</b></label>
-                        <input placeholder="0000-0000" type="text" id="telefono" required>
-                    </p><br>
-                    <p>
-                        <label for="dep"><b><span class="fas fa-map-signs"></span> Departamento:</b></label>
-                        <select name="" id="dep" required>
-                            <option value="Santa Ana">Santa Ana</option>
-                            <option value="Sonsonate">Sonsonate</option>
-                            <option value="Ahuachapan">Ahuachapan</option>
-                            <option value="San Salvador">San Salvador</option>
-                            <option value="La Libertad">La Libertad</option>
-                            <option value="La Paz">La Paz</option>
-                            <option value="La Union">La Union</option>
-                            <option value="San Vicente">San Vicente</option>
-                            <option value="Morazan">Morazan</option>
-                            <option value="Usulutan">Usulutan</option>
-                            <option value="Chalatenango">Chalatenango</option>
-                            <option value="Cabañas">Cabañas</option>
-                            <option value="Cuscatlan">Cuscatlan</option>
-                            <option value="San Miguel">San Miguel</option>
-                        </select>
-                   </p><br>
-                   <p>
-                        <label for="fecha"><b><span class="fas fa-calendar-alt"></span> Fecha de entrega:</b></label>
-                        <input type="date" id="fecha" required>
-                   </p><br><hr><br>
-                   <p><h4>Datos de tarjeta de credito</h4><br></p>
-                   <p>
-                        <label for="tarjeta"><b><span class="fas fa-list-ol"></span> Numero:</b></label>
-                        <input placeholder="Ej: 000-000-000-00" type="text" id="tarjeta" required><br><br>
-                        <label for="tarjetanom"><b><span class="fas fa-file-signature"></span> Nombre:</b></label>
-                        <input placeholder="Usuario Usuario" type="text" id="tarjetanom" required>
-                    </p><br><hr><br>
-                    <p><h4>Datos de la direccion de envio</h4></p><br>
-                    <p>
-                        <label for="direccion"><b><span class="fas fa-directions"></span> Direccion de envio:</b></label>
-                        <input placeholder="Colonia,Residecial,Barrio,etc" type="text" id="direccion" required><br><br>
-                        <label for="notas"><b><span class="fas fa-sticky-note"></span> Notas de tu pedido:</b></label>
-                        <input placeholder="Lugares de referencia" type="text" id="notas" required>
-                    </p><br><hr><br>
-                    <div class="pedido-padre">
-                            <input class="pedido" type="submit" value="Realizar Pedido">
+        <main class="col-12 col-t-12 main-pedidos">
+            <div class="col-11 col-t-11">
+                <div class="col-12 col-t-12 caja">
+                    <div class="col-8 col-t-8 contenido">
+                        <br>
+                        <form action="" method="post">
+                            <h4><b>Datos del cliente</b></h4><br>
+                            <p>
+                                <label for="nombre"><b><span class="fas fa-file-signature"></span> Nombre: &nbsp;</b></label>
+                                <input placeholder="   Ejemplo" id="nombre" required><br><br>
+                                <label for="apellido"><b><span class="fas fa-signature"></span> Apellido: </b></label>
+                                <input placeholder="   Ejemplo" id="apellido" required>
+                            </p><br>
+                            <p>
+                                <label for="email"><b><span class="fas fa-envelope"></span> Correo:  &nbsp;&nbsp;</b></label>
+                                <input placeholder="   ejemplo19@gmail.com" type="email"  id="email" required><br><br>
+                                <label for="telefono"><b><span class="fas fa-phone"></span> Telefono:</b></label>
+                                <input placeholder="   0000-0000" type="text" id="telefono" required>
+                            </p><br>
+                            <p>
+                                <label for="dep"><b><span class="fas fa-map-signs"></span> Departamento:</b></label>
+                                <select name="" id="dep" required>
+                                    <option value="Santa Ana">Santa Ana</option>
+                                    <option value="Sonsonate">Sonsonate</option>
+                                    <option value="Ahuachapan">Ahuachapan</option>
+                                    <option value="San Salvador">San Salvador</option>
+                                    <option value="La Libertad">La Libertad</option>
+                                    <option value="La Paz">La Paz</option>
+                                    <option value="La Union">La Union</option>
+                                    <option value="San Vicente">San Vicente</option>
+                                    <option value="Morazan">Morazan</option>
+                                    <option value="Usulutan">Usulutan</option>
+                                    <option value="Chalatenango">Chalatenango</option>
+                                    <option value="Cabañas">Cabañas</option>
+                                    <option value="Cuscatlan">Cuscatlan</option>
+                                    <option value="San Miguel">San Miguel</option>
+                                </select>
+                        </p><br>
+                        <p>
+                                <label for="fecha"><b><span class="fas fa-calendar-alt"></span> Fecha de entrega:</b></label>
+                                <input type="date" id="fecha" required>
+                        </p><br><hr><br>
+                        <p><h4>Datos de tarjeta de credito</h4><br></p>
+                        <p>
+                                <label for="tarjeta"><b><span class="fas fa-list-ol"></span> Numero:</b></label>
+                                <input placeholder="   Ej: 000-000-000-00" type="text" id="tarjeta" required><br><br>
+                                <label for="tarjetanom"><b><span class="fas fa-file-signature"></span> Nombre:</b></label>
+                                <input placeholder="   Usuario Usuario" type="text" id="tarjetanom" required>
+                            </p><br><hr><br>
+                            <p><h4>Datos de la direccion de envio</h4></p><br>
+                            <p>
+                                <label for="direccion"><b><span class="fas fa-directions"></span> Direccion de envio:</b></label>
+                                <input placeholder="   Colonia,Residecial,Barrio,etc" type="text" id="direccion" required><br><br>
+                                <label for="notas"><b><span class="fas fa-sticky-note"></span> Notas de tu pedido:</b></label>
+                                <input placeholder="    Lugares de referencia" type="text" id="notas" required>
+                            </p><br><hr><br>
+                            <div class="pedido-padre">
+                                <button class="pedido" onclick="Formulario()">Realizar Pedido</button>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
         </main>
     </div>

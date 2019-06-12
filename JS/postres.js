@@ -10,7 +10,6 @@ function ocultar(id,texto){
     document.getElementById(id).style.display = "none";
     document.getElementById(idmostrar).style.display = "block";
 }
-
 var numCompras = 0;
 function addCarretilla(){
     numCompras += 1;
@@ -26,16 +25,13 @@ function rmvCarretilla(){
     textoNum.innerHTML = numCompras;
     textoNum2.innerHTML = numCompras;
 }
-
 function hideBoton(id){
     let idmostrar = id + 1;
-    console.log("Entro!");
     document.getElementById(id).style.display = "none";
     document.getElementById(idmostrar).style.display = "block";
 }
 function mostrarBoton(id){
     let idmostrar = id - 1;
-    console.log("Entro!");
     document.getElementById(id).style.display = "none";
     document.getElementById(idmostrar).style.display = "block";
 }

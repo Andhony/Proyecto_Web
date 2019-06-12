@@ -1,6 +1,5 @@
 $(document).ready(function(){
     var altura = $('.menu').offset().top;
-
     $(window).on('scroll', function(){
         if ($(window).scrollTop() > altura) {
             $(".menu").addClass('menu-fixed');
@@ -10,7 +9,6 @@ $(document).ready(function(){
             $(".contenedor").removeClass('menu-fixed-margin');
         }
     });
-
     $(function(){
         $(".slider-galeria article:gt(0)").hide();
         setInterval(function(){

@@ -1,0 +1,22 @@
+.contenedor-contacto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:bisque;
+}
+.cont-interno{
+    background-color: plum;
+}
+h2{
+    font-family: myfont;
+    font-size: 40px;
+    text-align: left;
+}
+section h3{
+    font-size: 18px;
+    align-content: flex-start;
+}
+.icono{
+    font-size:35px;
+    color: gray;
+}

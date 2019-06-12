@@ -133,7 +133,7 @@
 @media only screen and (min-width: 768px){ /* ESCRITORIO */
     .btn{
         flex-direction: row;
-        display: none;
+        display: 
     }
     .botonocultar{
         display: none;

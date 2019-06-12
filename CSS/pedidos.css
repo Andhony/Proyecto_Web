@@ -28,6 +28,10 @@ h4{
 input{
     width: 250px;
     height: 25px;
+    background-color:lightpink;
+    border-radius: 5px;
+    border: 1px solid black;
+
 }
 .pedido{
     background-color: black;

@@ -7,9 +7,12 @@
 .cont-interno{
     background-color: lavenderblush;
 }
+.fuente{
+    font-size: 9pt;
+}
 .contform{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     background-color: lavenderblush;
@@ -51,7 +54,8 @@ section h3{
         justify-content: right;
         background-color: deeppink;
         color:white;
-        border-radius: 5px;
+        padding: 5px;
+        border-radius: 15px;
         cursor: pointer;
         width: 25%;
 }
@@ -71,3 +75,13 @@ input{
     width: 50%
 }
 
+@media only screen and (min-width: 600px){ /* TABLET */
+    .fuente{
+        font-size: 12pt;
+    }
+}
+@media only screen and (min-width: 768px){ /* Escritorio */
+    .cont-interno{
+        height: 600px;
+    }
+}
